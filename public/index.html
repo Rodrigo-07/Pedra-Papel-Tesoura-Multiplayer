@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script></head>
+<body>
+    <h1>Pedra Papel Tesoura</h1>
+
+    <h2>Player 1</h2>
+    <button id="pedra_p1" value="pedra">Pedra</button>
+    <button id="papel_p1" value="papel">Papel</button>
+    <button id="tesoura_p1" value="tesoura">Pedra</button>
+
+    <div id="player1_escolha"></div>
+
+    <div id="aguarde"></div>
+
+    <h2>Player 2</h2>
+    <button id="pedra_p2" value="pedra">Pedra</button>
+    <button id="papel_p2" value="papel">Papel</button>
+    <button id="tesoura_p2" value="tesoura">Pedra</button>
+
+    <div id="player2_escolha"></div>
+
+    <br>
+
+    <div id="resultado"></div>
+
+    <!-- Detecta quando um cliente está conentando no nosso servidor -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+</html>
