@@ -41,6 +41,7 @@ socket.on('jogada_player1_resultado', function(jogada) {
   });
 
 socket.on('jogada_player2_resultado', function(jogada) {
+    $("#aguarde").html("");
     $("#player2_escolha").html("Player 2 :" + jogada);
   });
 
