@@ -38,11 +38,13 @@ $("#tesoura_p2").click(function(e){
 socket.on('jogada_player1_resultado', function(jogada) {
     $("#player1_escolha").html("Player 1 :" + jogada);
     $("#aguarde").html("Aguardando jogada do player 2");
+    $('.botoes_player1').prop('disabled', true) 
   });
 
 socket.on('jogada_player2_resultado', function(jogada) {
     $("#aguarde").html("");
     $("#player2_escolha").html("Player 2 :" + jogada);
+    $('.botoes_player2').prop('disabled', true) 
   });
 
 socket.on('resultado_final', function(resultado) {
